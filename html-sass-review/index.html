@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Corner - Home</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__left">
+          <a
+            href="#"
+            aria-label="Home"
+            class="nav__home-icon nav__menu__item--active"
+            ><i class="fas fa-home"></i
+          ></a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav__checkbox" />
+        <label
+          for="nav-toggle"
+          class="nav__toggle"
+          role="button"
+          aria-label="Open Navigation Menu"
+          tabindex="0"
+        >
+          <i class="fas fa-bars"></i
+        ></label>
+        <div class="nav__menu">
+          <label
+            for="nav-toggle"
+            class="nav__menu__close"
+            role="button"
+            aria-label="Close Navigation Menu"
+            ><i class="fas fa-xmark"></i
+          ></label>
+          <a
+            href="#"
+            class="nav__menu__item nav__menu__item--home nav__menu__item--active"
+            >Home</a
+          >
+          <a href="./pages/about.html" class="nav__menu__item">About</a>
+          <a href="./pages/contact.html" class="nav__menu__item">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main class="landing">
+      <div class="landing__content">
+        <h1 class="landing__heading">Computer Corner</h1>
+        <h2 class="landing__heading">Learn to Code</h2>
+      </div>
+    </main>
+  </body>
+</html>

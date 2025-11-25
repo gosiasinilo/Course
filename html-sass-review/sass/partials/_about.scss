@@ -1,0 +1,55 @@
+@use "./variables" as v;
+@use "../mixins/media" as mq;
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__heading {
+    margin-top: 3em;
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  &__text {
+    font-size: 1.5em;
+    color: v.$color-primary;
+  }
+  @include mq.desktop {
+    height: 95vh;
+    &__heading {
+      margin-top: 1em;
+    }
+    &__content {
+      flex-direction: row;
+      gap: 2em;
+      align-items: stretch;
+    }
+    &__image-wrap {
+      flex: 1 1 50%;
+      order: 1;
+      align-self: stretch;
+      min-width: 400px;
+      height: auto;
+      display: block;
+      img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+    }
+    &__text {
+      order: 2;
+    }
+  }
+}

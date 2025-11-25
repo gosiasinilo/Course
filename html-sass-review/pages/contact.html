@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Corner - About</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__left">
+          <a href="../index.html" aria-label="Home" class="nav__home-icon"
+            ><i class="fas fa-home"></i
+          ></a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav__checkbox" />
+        <label
+          for="nav-toggle"
+          class="nav__toggle"
+          role="button"
+          aria-label="Open Navigation Menu"
+          tabindex="0"
+        >
+          <i class="fas fa-bars"></i
+        ></label>
+        <div class="nav__menu">
+          <label
+            for="nav-toggle"
+            class="nav__menu__close"
+            role="button"
+            aria-label="Close Navigation Menu"
+            ><i class="fas fa-xmark"></i
+          ></label>
+          <a href="../index.html" class="nav__menu__item nav__menu__item--home"
+            >Home</a
+          >
+          <a href="../pages/about.html" class="nav__menu__item">About</a>
+          <a
+            href="../pages/contact.html"
+            class="nav__menu__item nav__menu__item--active"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="contact">
+      <div class="contact__content">
+        <form class="contact__form">
+          <h1 class="contact__heading">Contact Us</h1>
+
+          <div class="contact__row contact__row--name">
+            <div class="contact__field">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname" required />
+            </div>
+            <div class="contact__field">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" name="lastname" required />
+            </div>
+          </div>
+
+          <div class="contact__row contact__row--gender">
+            <label>Gender:</label>
+            <div class="contact__radio-group">
+              <label
+                ><input type="radio" name="gender" value="male" />Male</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="gender"
+                  value="female"
+                />Female</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="gender"
+                  value="nonbinary"
+                />Non-binary</label
+              >
+              <label
+                ><input type="radio" name="gender" value="na" />Prefer not to
+                say</label
+              >
+            </div>
+          </div>
+
+          <div class="contact__row">
+            <label for="education">Highest Level of Education:</label>
+            <select id="education" name="education" required>
+              <option>Primary</option>
+              <option>Secondary</option>
+              <option>College</option>
+              <option>Bachelor</option>
+              <option>Master</option>
+              <option>PHD</option>
+              <option>Prefer not to say</option>
+            </select>
+          </div>
+          <div class="contact__row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+          <div class="contact__row">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+
+        <div class="contact__image">
+          <img src="../assets/images/map.png" alt="Our location on the map" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

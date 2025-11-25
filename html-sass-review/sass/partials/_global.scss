@@ -1,0 +1,25 @@
+@use './variables' as v;
+
+body {
+  background-color: v.$color-bg;
+  font-family: v.$font-text;
+  color: v.$color-text;
+}
+
+a {
+  text-decoration: none;
+  color: v.$color-primary;
+  &:hover {
+    color: v.$color-secondary;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: v.$color-primary;
+  font-family: v.$font-heading;
+}
